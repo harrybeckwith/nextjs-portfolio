@@ -49,49 +49,100 @@ table {
 img {
   max-width: 100%; }
 
+/*  ==========================================================================
+      breakpoint-max -
+      This mixin allows us to use specific breakpoints
+      defined in our variables, and generate the correct
+      (max-width) media query required
+  =========================================================================== */
 body {
-  font-family: 'Lora', serif; }
+  font-family: 'Lora', serif;
+  color: #333; }
 
 .menu {
   font-size: 50px;
   position: fixed;
-  background-color: blue;
+  background-color: #fff;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 70%; }
+  width: 100%;
+  overflow: scroll; }
+  @media (min-width: 768px) {
+    .menu {
+      width: 70%; } }
+  .menu__nav {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    transition: ease 0.15s; }
+    .menu__nav__active {
+      color: #fd885d !important; }
+    @media (min-width: 768px) {
+      .menu__nav {
+        border-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0; } }
+    .menu__nav a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: #333;
+      text-transform: capitalize;
+      display: block;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      transition: ease 0.15s; }
+      .menu__nav a:hover {
+        color: #fd885d; }
+  .menu__about {
+    padding-top: 3.2rem; }
+    @media (min-width: 768px) {
+      .menu__about {
+        padding-top: 0; } }
   .menu__about, .menu__nav {
-    width: 50%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-right: 1px solid black; }
-  .menu__about__inside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-  .menu__container {
-    display: flex;
-    justify-content: space-between; }
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .menu__about, .menu__nav {
+        margin-top: 0;
+        width: 50%;
+        height: 100vh;
+        border-right: 1px solid #f0f0f0; } }
+  .menu__about {
+    border-top: 1px solid #f0f0f0; }
+    @media (min-width: 768px) {
+      .menu__about {
+        border-top: 0; } }
+    .menu__about__inside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+  @media (min-width: 768px) {
+    .menu__container {
+      display: flex;
+      justify-content: space-between; } }
   .menu__title {
-    font-size: 1.6rem; }
+    font-size: 1.1rem; }
   .menu__desc {
     font-size: 1.1rem;
-    max-width: 308px;
     text-align: center;
-    line-height: 1.5; }
+    line-height: 1.5;
+    max-width: 80%; }
+    @media (min-width: 1024px) {
+      .menu__desc {
+        max-width: 343px; } }
   .menu__avatar {
     border-radius: 50%;
     width: 120px; }
   .menu__icons__icon {
     width: 25px;
     margin-right: 20px;
-    transition: .2s linear; }
+    transition: 0.2s linear; }
     .menu__icons__icon:hover {
-      opacity: .4; }
+      opacity: 0.4; }
   .menu__title, .menu__desc, .menu__icons {
     margin-top: 1.2rem; }
 

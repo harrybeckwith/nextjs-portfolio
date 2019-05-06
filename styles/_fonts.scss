@@ -2,5 +2,6 @@
 
 body {
 	font-family: 'Lora', serif;
+	color: map-get($colors, base);
 }
 

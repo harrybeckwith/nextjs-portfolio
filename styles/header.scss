@@ -1,74 +1,128 @@
-
 .menu {
-    font-size: 50px;
-    position: fixed;
-    background-color: blue;
+  font-size: 50px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: scroll;
 
-    top: 0;
-    left: 0;
-    bottom: 0;
+  @include breakpoint-min(sm) {
     width: 70%;
+  }
 
+  &__nav {
+    border-bottom: 1px solid map-get($colors, grey-light);
+    padding-bottom: map-get($spacing, 5);
+    padding-top: map-get($spacing, 5);
+    transition: map-get($transitions, fast);
 
-    &__about,
-    &__nav {
-        width: 50%;
-        height: 100vh;
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
-        border-right: 1px solid black;
+    &__active {
+      color: map-get($colors, secondary) !important;
     }
 
-    &__about {
-        &__inside {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+    @include breakpoint-min(sm) {
+      border-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
-    &__container {
-        display:flex;
-        justify-content: space-between;
+    a {
+      font-size: map-get($fontSize, base);
+      text-decoration: none;
+      color: map-get($colors, base);
+      text-transform: capitalize;
+      display: block;
+      padding-top: map-get($spacing, 3);
+      padding-bottom: map-get($spacing, 3);
+      transition: map-get($transitions, fast);
+
+      &:hover {
+        color: map-get($colors, secondary);
+      }
     }
+  }
 
-    &__title {
-        font-size: map-get($fontSize, base);
+  &__about {
+    padding-top: map-get($spacing, 8);
+
+    @include breakpoint-min(sm) {
+      padding-top: 0;
     }
+  }
 
-    &__desc {
-        font-size: map-get($fontSize, 3xs);
-        max-width: 308px;
-        text-align: center;
-        line-height: map-get($lineHeight, normal);
+  &__about,
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-min(sm) {
+      margin-top: 0;
+      width: 50%;
+      height: 100vh;
+      border-right: 1px solid map-get($colors, grey-light);
     }
+  }
 
-    &__avatar {
-        border-radius: 50%;
-        width: 120px;
+  &__about {
+    border-top: 1px solid map-get($colors, grey-light);
+
+    @include breakpoint-min(sm) {
+      border-top: 0;
     }
-
-    &__icons {
-
-        &__icon {
-            width: 25px;
-            margin-right:20px;
-            transition: .2s linear;
-
-            &:hover {
-                opacity: .4;
-            }
-        }
+    &__inside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
+  }
 
-    &__title,
-    &__desc,
-    &__icons {
-        margin-top: map-get($spacing, 3);
+  &__container {
+    @include breakpoint-min(sm) {
+      display: flex;
+      justify-content: space-between;
     }
+  }
 
+  &__title {
+    font-size: map-get($fontSize, 3xs);
+  }
+
+  &__desc {
+    font-size: map-get($fontSize, 3xs);
+    text-align: center;
+    line-height: map-get($lineHeight, normal);
+    max-width: 80%;
+
+    @include breakpoint-min(md) {
+      max-width: 343px;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    width: 120px;
+  }
+
+  &__icons {
+    &__icon {
+      width: 25px;
+      margin-right: 20px;
+      transition: 0.2s linear;
+
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__title,
+  &__desc,
+  &__icons {
+    margin-top: map-get($spacing, 3);
+  }
 }
-

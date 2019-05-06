@@ -1,3 +1,10 @@
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
 $breakpoints: (
   xs: 480,
   sm: 768,
@@ -34,37 +41,19 @@ $fontWeight: (
   bold: 700,
 );
 
+
+$letterSpacing: (
+  tight: -0.08em,
+  normal: 0,
+  wide: 0.08em,
+);
+
+
 $colors: (
-  primary: (
-    base: #df384b,
-    dark: #b52d3d,
-  ),
-  secondary: (
-    light: #def7ff,
-    base: #31a6ce,
-    dark: #257e9c,
-  ),
-  tertiary: (
-    base: #383838,
-    light: #4e4e4e,
-  ),
-  grey: (
-    base: #c3c3c3,
-    light: #dfdfdf,
-    lighter: #f2f2f2,
-  ),
-  red: #de3649,
-  turquoise: #2fa4cc,
-  green: #30cd79,
-  purple: #82249a,
-  gold: #b3ae2c,
-  pink: #e77676,
-  boxShadow: #d0d0d0,
-  transparent: transparent,
-  black: #000000,
-  white: #ffffff,
-  positive: #97bd2a,
-  negative: #df384b,
+    primary: #333,
+    secondary: #fd885d,
+    grey-light: #f0f0f0,
+    base: #333,
 );
 
 $borderRadius: (
@@ -100,4 +89,11 @@ $zIndex: (
   3: 30,
   4: 40,
   max: 50,
+);
+
+
+$transitions: (
+  base: ease 0.35s,
+  fast: ease 0.15s,
+  slow: ease 0.55s,
 );
