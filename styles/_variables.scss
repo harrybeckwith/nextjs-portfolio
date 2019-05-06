@@ -1,0 +1,103 @@
+$breakpoints: (
+  xs: 480,
+  sm: 768,
+  md: 1024,
+  lg: 1200,
+);
+
+$fontSize: (
+  // All font sizes are calculated based on 1rem = 10px
+    3xs: 1.1rem,
+  2xs: 1.2rem,
+  xs: 1.3rem,
+  sm: 1.4rem,
+  base: 1.6rem,
+  lg: 1.7rem,
+  xl: 1.8rem,
+  2xl: 2.2rem,
+  3xl: 2.4rem,
+  4xl: 2.6rem,
+  5xl: 2.8rem,
+  6xl: 3rem,
+  7xl: 4rem
+);
+
+
+$lineHeight: (
+  none: 1,
+  tight: 1.25,
+  normal: 1.5,
+);
+
+$fontWeight: (
+  normal: 300,
+  bold: 700,
+);
+
+$colors: (
+  primary: (
+    base: #df384b,
+    dark: #b52d3d,
+  ),
+  secondary: (
+    light: #def7ff,
+    base: #31a6ce,
+    dark: #257e9c,
+  ),
+  tertiary: (
+    base: #383838,
+    light: #4e4e4e,
+  ),
+  grey: (
+    base: #c3c3c3,
+    light: #dfdfdf,
+    lighter: #f2f2f2,
+  ),
+  red: #de3649,
+  turquoise: #2fa4cc,
+  green: #30cd79,
+  purple: #82249a,
+  gold: #b3ae2c,
+  pink: #e77676,
+  boxShadow: #d0d0d0,
+  transparent: transparent,
+  black: #000000,
+  white: #ffffff,
+  positive: #97bd2a,
+  negative: #df384b,
+);
+
+$borderRadius: (
+  sm: 0.4rem,
+  default: 1.2rem,
+  lg: 3.2rem,
+  full: 9999px,
+);
+
+$spacing: (
+  // All spacing sizes are calculated based on 1rem = 10px
+    px: 1px,
+  1: 0.4rem,
+  2: 0.8rem,
+  3: 1.2rem,
+  4: 1.6rem,
+  5: 2rem,
+  6: 2.4rem,
+  8: 3.2rem,
+  10: 4rem,
+  12: 4.8rem,
+  16: 6.4rem,
+  20: 8rem,
+  24: 9.6rem,
+  32: 12.8rem
+);
+
+$zIndex: (
+  auto: auto,
+  min: 0,
+  1: 10,
+  2: 20,
+  3: 30,
+  4: 40,
+  max: 50,
+);
