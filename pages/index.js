@@ -3,7 +3,8 @@ import axios from "axios";
 
 class Index extends React.Component {
   state = {
-    blog: []
+    blog: [],
+    front: []
   };
 
   componentDidMount() {
@@ -14,9 +15,18 @@ class Index extends React.Component {
   }
 
   render() {
+    const blogItems = Object.keys(this.state.blog).map((item, index) => {
+      const blogItem = this.state.blog[item].map(v => {
+        console.log(v.front.title);
+      });
+    });
+
     return (
       <Layout>
-        <p>Hello Next.js</p>
+        <p>Home</p>
+        {Object.keys(this.state.blog).map((item, index) => {
+          this.state.blog[item].map(v => `<p> ${v.front.title}</p>`).join("");
+        })}
       </Layout>
     );
   }
