@@ -1,15 +1,15 @@
 @function map-deep-get($map, $keys...) {
-    @each $key in $keys {
-        $map: map-get($map, $key);
-    }
-    @return $map;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
 }
 
 $breakpoints: (
   xs: 480,
   sm: 768,
   md: 1024,
-  lg: 1200,
+  lg: 1200
 );
 
 $fontSize: (
@@ -29,38 +29,36 @@ $fontSize: (
   7xl: 4rem
 );
 
-
 $lineHeight: (
   none: 1,
   tight: 1.25,
-  normal: 1.5,
+  normal: 1.5
 );
 
 $fontWeight: (
   normal: 300,
-  bold: 700,
+  bold: 700
 );
-
 
 $letterSpacing: (
   tight: -0.08em,
   normal: 0,
-  wide: 0.08em,
+  wide: 0.08em
 );
 
-
 $colors: (
-    primary: #333,
-    secondary: #fd885d,
-    grey-light: #f0f0f0,
-    base: #333,
+  primary: #333,
+  secondary: #fd885d,
+  grey: #aaa,
+  grey-light: #f0f0f0,
+  base: #333
 );
 
 $borderRadius: (
   sm: 0.4rem,
   default: 1.2rem,
   lg: 3.2rem,
-  full: 9999px,
+  full: 9999px
 );
 
 $spacing: (
@@ -88,12 +86,11 @@ $zIndex: (
   2: 20,
   3: 30,
   4: 40,
-  max: 50,
+  max: 50
 );
-
 
 $transitions: (
   base: ease 0.35s,
   fast: ease 0.15s,
-  slow: ease 0.55s,
+  slow: ease 0.55s
 );

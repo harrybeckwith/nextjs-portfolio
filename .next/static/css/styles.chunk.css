@@ -3,19 +3,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,22 +92,40 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
-body {
-  line-height: 1; }
+html {
+  height: 100%;
+  box-sizing: border-box; }
 
-ol, ul {
+body {
+  line-height: 1;
+  min-height: 100%; }
+
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -48,6 +134,25 @@ table {
 
 img {
   max-width: 100%; }
+
+/* unvisited link */
+a:link {
+  color: inherit; }
+
+/* visited link */
+a:visited {
+  color: inherit; }
+
+/* mouse over link */
+a:hover {
+  color: inherit; }
+
+/* selected link */
+a:active {
+  color: inherit; }
+
+a {
+  transition: 0.1s linear; }
 
 /*  ==========================================================================
       breakpoint-max -
@@ -67,22 +172,29 @@ h5 {
   font-family: "Playfair Display", serif;
   color: #000; }
 
-.container-outter {
+.container {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 70px;
+  padding-right: 70px; }
   @media (min-width: 768px) {
-    .container-outter {
-      max-width: 1440px;
-      padding-left: 120px;
-      padding-right: 120px; } }
-
-.container-fixed {
-  position: fixed;
-  width: 100%;
-  bottom: 0; }
-  @media (min-width: 768px) {
-    .container-fixed {
-      bottom: unset; } }
+    .container {
+      max-width: 1440px; } }
+  .container-outter {
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 768px) {
+      .container-outter {
+        max-width: 1440px;
+        padding-left: 120px;
+        padding-right: 120px; } }
+  .container-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0; }
+    @media (min-width: 768px) {
+      .container-fixed {
+        bottom: unset; } }
 
 .title__underline {
   border-bottom: solid 1px #000;
@@ -102,6 +214,9 @@ h5 {
   @media (min-width: 768px) {
     .title__md-only {
       display: block; } }
+
+.hl {
+  color: #fd885d; }
 
 .header {
   padding-top: 6%;
@@ -241,6 +356,36 @@ h5 {
 
 .active-menu .top-bar .title--md {
   display: none; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid #f0f0f0; }
+  .footer__inside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+  .footer__icons {
+    margin-top: 0;
+    width: 18px; }
+    .footer__icons a {
+      margin-right: 10px; }
+  .footer__links, .footer__icons, .footer__note {
+    display: flex;
+    margin-bottom: 3.2rem; }
+  .footer__links a {
+    display: block;
+    padding-left: 1.2rem;
+    color: #aaa; }
+    .footer__links a:hover {
+      color: #333; }
+  .footer__note a, .footer__links a {
+    text-decoration: none; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

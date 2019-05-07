@@ -22,3 +22,7 @@
     }
   }
 }
+
+.hl {
+  color: map-get($colors, secondary);
+}

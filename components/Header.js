@@ -1,4 +1,4 @@
-import ActiveLink from "./ActiveLink";
+import Links from "../components/Links.js";
 
 export default function Header(props) {
   return (
@@ -6,24 +6,7 @@ export default function Header(props) {
       <div className="menu">
         <div className="menu__container">
           <nav className="menu__nav">
-            <ActiveLink href="/">
-              <a>Home</a>
-            </ActiveLink>
-            <ActiveLink href="/">
-              <a>Travel</a>
-            </ActiveLink>
-            <ActiveLink href="/">
-              <a>Food & drink</a>
-            </ActiveLink>
-            <ActiveLink href="/">
-              <a>Style</a>
-            </ActiveLink>
-            <ActiveLink href="/about">
-              <a>About</a>
-            </ActiveLink>
-            <ActiveLink href="/blog">
-              <a>Blog</a>
-            </ActiveLink>
+            <Links />
           </nav>
           <div className="menu__about">
             <div className="menu__about__inside">

@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import "../styles/base.scss";
 
 import React from "react";
@@ -22,6 +23,8 @@ class Layout extends React.Component {
           activeMenu={this.state.activeMenu}
         />
         {this.props.children}
+
+        <Footer />
       </div>
     );
   }
