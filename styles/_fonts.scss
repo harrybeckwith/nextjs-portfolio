@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i");
 
 body {
-	font-family: 'Lora', serif;
-	color: map-get($colors, base);
+  font-family: "Lora", serif;
+  color: map-get($colors, base);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  color: #000;
+}

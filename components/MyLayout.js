@@ -1,18 +1,30 @@
-import Header from './Header'
-import "../styles/base.scss"
+import Header from "./Header";
+import "../styles/base.scss";
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
+import React from "react";
+
+class Layout extends React.Component {
+  state = {
+    activeMenu: false
+  };
+
+  toggleMenu = () => {
+    this.setState({
+      activeMenu: !this.state.activeMenu
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <Header
+          toggleMenu={this.toggleMenu}
+          activeMenu={this.state.activeMenu}
+        />
+        {this.props.children}
+      </div>
+    );
+  }
 }
 
-export default function Layout(props) {
-  return (
-    <div style={layoutStyle}>
-
-      <Header />
-      {props.children}
-    </div>
-  )
-}
+export default Layout;
