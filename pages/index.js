@@ -1,9 +1,25 @@
-import Layout from '../components/MyLayout.js'
+import Layout from "../components/MyLayout.js";
+import axios from "axios";
 
-export default function Index() {
-  return (
-    <Layout>
-      <p>Hello Next.js</p>
-    </Layout>
-  )
+class Index extends React.Component {
+  state = {
+    blog: []
+  };
+
+  componentDidMount() {
+    axios.get(`static/content/blog.json`).then(res => {
+      const blog = res.data;
+      this.setState({ blog });
+    });
+  }
+
+  render() {
+    return (
+      <Layout>
+        <p>Hello Next.js</p>
+      </Layout>
+    );
+  }
 }
+
+export default Index;

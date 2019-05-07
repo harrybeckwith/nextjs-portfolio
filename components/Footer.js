@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="footer__note">
             <p>
               <a href="https://harrybeckwith.github.io/" target="_blank">
-                Created by <span class="hl">h</span>
+                Created by <span className="hl">h</span>
               </a>
             </p>
           </div>
