@@ -13,8 +13,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid map-get($colors, grey-light);
+  background-color: #fff;
 
   @include breakpoint-min(sm) {
     justify-content: space-between;
@@ -61,8 +61,9 @@
     margin 0ms 350ms linear;
   opacity: 0;
   visibility: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
+  z-index: 50;
 
   &__nav {
     border-bottom: 1px solid map-get($colors, grey-light);
@@ -81,13 +82,13 @@
     }
 
     a {
-      font-size: map-get($fontSize, base);
+      font-size: map-get($fontSize, sm);
       text-decoration: none;
       color: map-get($colors, base);
       text-transform: capitalize;
       display: block;
-      padding-top: map-get($spacing, 3);
-      padding-bottom: map-get($spacing, 3);
+      padding-top: map-get($spacing, 2);
+      padding-bottom: map-get($spacing, 2);
       transition: map-get($transitions, fast);
 
       &:hover {

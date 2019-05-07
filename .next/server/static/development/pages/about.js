@@ -287,71 +287,52 @@ function Header(props) {
       lineNumber: 5
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "title__underline title--md title__sm-only header__title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "menu__nav",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-fixed",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__about",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-outter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "top-bar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__about__inside",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    onClick: props.toggleMenu,
+    className: "top-bar__toggle",
+    src: "".concat(props.activeMenu ? "/static/icons/close.svg" : "/static/icons/menu.svg"),
+    alt: "menu-icon",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__avatar",
-    src: "/static/images/naomi.png",
-    alt: "avatar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "menu__title",
+    className: "title__underline title--md title__md-only",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: this
-  }, "Hi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "menu__desc",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
@@ -392,56 +373,75 @@ function Header(props) {
       lineNumber: 38
     },
     __self: this
-  }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "title__underline title--md title__sm-only header__title",
+  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
     },
     __self: this
-  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container-fixed",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "menu__nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 50
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container-outter",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "top-bar",
+    className: "menu__about__inside",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    onClick: props.toggleMenu,
-    className: "top-bar__toggle",
-    src: "".concat(props.activeMenu ? "/static/icons/close.svg" : "/static/icons/menu.svg"),
-    alt: "menu-icon",
+    className: "menu__avatar",
+    src: "/static/images/naomi.png",
+    alt: "avatar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "title__underline title--md title__md-only",
+    className: "menu__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 60
     },
     __self: this
-  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Hi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "menu__desc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -449,7 +449,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -458,7 +458,7 @@ function Header(props) {
     alt: "instagram logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 70
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -466,7 +466,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 76
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -475,10 +475,10 @@ function Header(props) {
     alt: "twitter logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 80
     },
     __self: this
-  })))))));
+  }))))))));
 }
 
 /***/ }),
