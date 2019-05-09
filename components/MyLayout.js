@@ -22,8 +22,10 @@ class Layout extends React.Component {
           toggleMenu={this.toggleMenu}
           activeMenu={this.state.activeMenu}
         />
+        <div className="container">
         {this.props.children}
-
+        </div>
+   
         <Footer />
       </div>
     );

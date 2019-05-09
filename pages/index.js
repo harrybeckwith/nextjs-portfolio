@@ -1,32 +1,37 @@
 import Layout from "../components/MyLayout.js";
-import axios from "axios";
+import blog from "../static/content/blog.json";
+import Front from '../components/Front.js';
 
 class Index extends React.Component {
   state = {
-    blog: [],
+    blog,
     front: []
   };
 
-  componentDidMount() {
-    axios.get(`static/content/blog.json`).then(res => {
-      const blog = res.data;
-      this.setState({ blog });
-    });
-  }
 
   render() {
-    const blogItems = Object.keys(this.state.blog).map((item, index) => {
-      const blogItem = this.state.blog[item].map(v => {
-        console.log(v.front.title);
-      });
-    });
+ 
+    console.log(this.state.blog);
+
+    const front = this.state.blog.main.map((item,index) => 
+      <p key={index}>{item.front.title}</p>
+    )
+
 
     return (
       <Layout>
         <p>Home</p>
-        {Object.keys(this.state.blog).map((item, index) => {
-          this.state.blog[item].map(v => `<p> ${v.front.title}</p>`).join("");
-        })}
+        
+      <div className="front">
+      
+          {this.state.blog.main.map((item, index) => (
+
+                <Front info={item.front} key={index}/>
+          ))}
+
+        </div>
+     
+
       </Layout>
     );
   }

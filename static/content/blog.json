@@ -3,9 +3,9 @@
     {
       "front": {
         "title": "first tilte",
-        "thumbNail": "/static/images/naomi.png",
-        "data": "May 2019",
-        "tag": ["travel"]
+        "thumbNail": "static/images/blog/example1.jpg",
+        "date": "May 2019",
+        "tag": ["travel","food"]
       },
 
       "content": {
@@ -34,8 +34,8 @@
     {
       "front": {
         "title": "first tilte",
-        "thumbNail": "/static/images/naomi.png",
-        "data": "May 2019",
+        "thumbNail": "/static/images/blog/example1.jpg",
+        "date": "May 2019",
         "tag": ["travel"]
       },
 
