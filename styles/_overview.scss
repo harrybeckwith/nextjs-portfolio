@@ -1,0 +1,18 @@
+.overview {
+    &__container {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        align-self: center;
+        width:100%;
+    }
+
+    &__img,
+    &__content {
+        width: 48%;
+    }
+
+    
+}

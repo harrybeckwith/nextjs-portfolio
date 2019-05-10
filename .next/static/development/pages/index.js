@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/ActiveLink.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/ActiveLink.js";
 
 
 
@@ -55,7 +55,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Links.js */ "./components/Links.js");
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/Footer.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/Footer.js";
 
 
 
@@ -170,83 +170,6 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ "./components/Front.js":
-/*!*****************************!*\
-  !*** ./components/Front.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/Front.js";
-
-
-var Front = function Front(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__card",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "front__img",
-    src: "".concat(props.info.thumbNail),
-    alt: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text__sm text__light",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, props.info.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "title--md title__underline__sm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, props.info.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__card__group text__light text__sm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, props.info.tag.map(function (item, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      key: index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, item);
-  }).reduce(function (prev, curr) {
-    return [prev, ', ', curr];
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Front);
-
-/***/ }),
-
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -262,7 +185,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Links.js */ "./components/Links.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/Header.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/Header.js";
 
 
 
@@ -289,7 +212,7 @@ function Header(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container-outter",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -495,7 +418,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ActiveLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ActiveLink */ "./components/ActiveLink.js");
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/Links.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/Links.js";
 
 
 
@@ -520,7 +443,7 @@ var Links = function Links() {
     },
     __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/",
+    href: "/sites",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -532,8 +455,8 @@ var Links = function Links() {
       lineNumber: 10
     },
     __self: this
-  }, "Travel")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/",
+  }, "Sites")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: "/projects",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -545,8 +468,8 @@ var Links = function Links() {
       lineNumber: 13
     },
     __self: this
-  }, "Food & drink")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/",
+  }, "projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    href: "/gallery",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -558,33 +481,7 @@ var Links = function Links() {
       lineNumber: 16
     },
     __self: this
-  }, "Style")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    href: "/blog",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "Blog")));
+  }, "Gallery")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Links);
@@ -620,7 +517,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/MyLayout.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/MyLayout.js";
 
 
 
@@ -6391,10 +6288,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fnaomi-port%2Fpages%2Findex.js!./":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fnaomi-port%2Fpages%2Findex.js ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js!./":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10659,131 +10556,61 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_blog_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/blog.json */ "./static/content/blog.json");
-var _static_content_blog_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/blog.json */ "./static/content/blog.json", 1);
-/* harmony import */ var _components_Front_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Front.js */ "./components/Front.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/index.js";
 
 
 
-
-
-
-
-var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/pages/index.js";
-
-
-
-
-
-var Index =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, _React$Component);
-
-  function Index() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      blog: _static_content_blog_json__WEBPACK_IMPORTED_MODULE_9__,
-      front: []
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
-    key: "render",
-    value: function render() {
-      console.log(this.state.blog);
-      var front = this.state.blog.main.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-          key: index,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 17
-          },
-          __self: this
-        }, item.front.title);
-      });
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        },
-        __self: this
-      }, "Home"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "front",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
-      }, this.state.blog.main.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Front_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
-          info: item.front,
-          key: index,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 29
-          },
-          __self: this
-        });
-      })));
-    }
-  }]);
-
-  return Index;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+var Index = function Index() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home__content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Hello"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""))));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ "./static/content/blog.json":
-/*!**********************************!*\
-  !*** ./static/content/blog.json ***!
-  \**********************************/
-/*! exports provided: main, default */
-/***/ (function(module) {
-
-module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"/static/images/blog/example1.jpg","date":"May 2019","tag":["travel"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}}]};
-
-/***/ }),
-
-/***/ 4:
-/*!************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fnaomi-port%2Fpages%2Findex.js ***!
-  \************************************************************************************************************************************/
+/***/ 0:
+/*!******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fnaomi-port%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fnaomi-port%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -10799,5 +10626,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

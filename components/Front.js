@@ -3,7 +3,7 @@ import React from 'react'
 const Front = (props) => (
 
     <div className="front__card">
-        <img className="front__img" src={`${props.info.thumbNail}`} alt=""/>
+        <img className="front__img" src={`${props.info.thumbNail}`} alt="" onClick={()=>props.cardClick(props.curr)}/>
         <div className="front__content">
             <p className="text__sm text__light">{props.info.date}</p>
             <h3 className="title--md title__underline__sm">{props.info.title}</h3>

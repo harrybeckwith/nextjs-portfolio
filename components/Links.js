@@ -6,20 +6,14 @@ const Links = () => {
       <ActiveLink href="/">
         <a>Home</a>
       </ActiveLink>
-      <ActiveLink href="/">
-        <a>Travel</a>
+      <ActiveLink href="/sites">
+        <a>Sites</a>
       </ActiveLink>
-      <ActiveLink href="/">
-        <a>Food & drink</a>
+      <ActiveLink href="/projects">
+        <a>projects</a>
       </ActiveLink>
-      <ActiveLink href="/">
-        <a>Style</a>
-      </ActiveLink>
-      <ActiveLink href="/about">
-        <a>About</a>
-      </ActiveLink>
-      <ActiveLink href="/blog">
-        <a>Blog</a>
+      <ActiveLink href="/gallery">
+        <a>Gallery</a>
       </ActiveLink>
     </React.Fragment>
   );
