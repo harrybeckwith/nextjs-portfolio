@@ -1,4 +1,5 @@
 import Links from "../components/Links.js";
+import Link from "next/link";
 
 export default function Header(props) {
   return (
@@ -19,7 +20,9 @@ export default function Header(props) {
               }`}
               alt="menu-icon"
             />
-            <h3 className="title__underline title--md title__md-only">Naomi</h3>
+            <h3 className="title__underline title--md title__md-only">
+              <Link href="/"><a>title</a></Link>
+            </h3>
             <div className="menu__icons">
               <a
                 href="https://www.instagram.com/naomijoanna/?hl=en"

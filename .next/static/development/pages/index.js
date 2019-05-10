@@ -193,6 +193,7 @@ var Front = function Front(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "front__img",
     src: "".concat(props.info.thumbNail),
     alt: "",
     __source: {
@@ -200,25 +201,32 @@ var Front = function Front(props) {
       lineNumber: 6
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    class: "text__sm text__light",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "front__content",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, props.info.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    class: "text__large",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text__sm text__light",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, props.info.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__card__group",
+  }, props.info.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "title--md title__underline__sm",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
+    },
+    __self: this
+  }, props.info.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "front__card__group text__light text__sm",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }, props.info.tag.map(function (item, index) {
@@ -226,11 +234,13 @@ var Front = function Front(props) {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 12
       },
       __self: this
     }, item);
-  })));
+  }).reduce(function (prev, curr) {
+    return [prev, ', ', curr];
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Front);
@@ -250,7 +260,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Links.js */ "./components/Links.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/Header.js";
+
 
 
 function Header(props) {
@@ -258,35 +271,35 @@ function Header(props) {
     className: "header ".concat(props.activeMenu ? "active-menu" : ""),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "title__underline title--md title__sm-only header__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-fixed",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-outter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "top-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -296,21 +309,34 @@ function Header(props) {
     alt: "menu-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "title__underline title--md title__md-only",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
-  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "title"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -318,7 +344,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -327,7 +353,7 @@ function Header(props) {
     alt: "instagram logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 31
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -335,7 +361,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -344,48 +370,48 @@ function Header(props) {
     alt: "twitter logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 41
     },
     __self: this
   })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "menu__nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 54
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__about__inside",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -394,28 +420,28 @@ function Header(props) {
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 58
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "menu__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
   }, "Hi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "menu__desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 64
     },
     __self: this
   }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -423,7 +449,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 69
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -432,7 +458,7 @@ function Header(props) {
     alt: "instagram logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 73
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -440,7 +466,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 79
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -449,7 +475,7 @@ function Header(props) {
     alt: "twitter logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 83
     },
     __self: this
   }))))))));
@@ -10746,11 +10772,11 @@ function (_React$Component) {
 /*! exports provided: main, default */
 /***/ (function(module) {
 
-module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"/static/images/blog/example1.jpg","date":"May 2019","tag":["travel"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}}]};
+module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}},{"front":{"title":"first tilte","thumbNail":"/static/images/blog/example1.jpg","date":"May 2019","tag":["travel"]},"content":{"largeImg":"/static/images/naomi.png","pageImages":["/static/images/naomi.png","/static/images/naomi.png","/static/images/naomi.png"],"boldTitles":["bold title here maybe a few lines max","bold title here maybe a few lines max"],"topContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"bottomContent":["Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."]}}]};
 
 /***/ }),
 
-/***/ 0:
+/***/ 4:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fnaomi-port%2Fpages%2Findex.js ***!
   \************************************************************************************************************************************/
@@ -10773,5 +10799,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[4,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -1,6 +1,29 @@
 .front {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+
     &__card {
-        width: 30%;
+        width: 23%;
+
+        &__group {
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin-left: 2px;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: map-get($spacing, 2);
+    }
+
+    &__content  * {
+
+        margin-bottom: map-get($spacing, 5);
     }
 }

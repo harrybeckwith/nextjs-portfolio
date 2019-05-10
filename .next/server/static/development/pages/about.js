@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -276,7 +276,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Links.js */ "./components/Links.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/harry.beckwith/Desktop/naomi-port/components/Header.js";
+
 
 
 function Header(props) {
@@ -284,35 +287,35 @@ function Header(props) {
     className: "header ".concat(props.activeMenu ? "active-menu" : ""),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "title__underline title--md title__sm-only header__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-fixed",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-outter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "top-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -322,21 +325,34 @@ function Header(props) {
     alt: "menu-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "title__underline title--md title__md-only",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
-  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "title"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -344,7 +360,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -353,7 +369,7 @@ function Header(props) {
     alt: "instagram logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 31
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -361,7 +377,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -370,48 +386,48 @@ function Header(props) {
     alt: "twitter logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 41
     },
     __self: this
   })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "menu__nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 54
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__about__inside",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -420,28 +436,28 @@ function Header(props) {
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 58
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "menu__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
   }, "Hi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "menu__desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 64
     },
     __self: this
   }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -449,7 +465,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 69
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -458,7 +474,7 @@ function Header(props) {
     alt: "instagram logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 73
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -466,7 +482,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 79
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -475,7 +491,7 @@ function Header(props) {
     alt: "twitter logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 83
     },
     __self: this
   }))))))));
@@ -1671,7 +1687,7 @@ function About() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
