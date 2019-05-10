@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1643,10 +1643,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/single-project.js":
-/*!*********************************!*\
-  !*** ./pages/single-project.js ***!
-  \*********************************/
+/***/ "./pages/gallery.js":
+/*!**************************!*\
+  !*** ./pages/gallery.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1661,9 +1661,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/projects.json */ "./static/content/projects.json");
-var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/projects.json */ "./static/content/projects.json", 1);
+/* harmony import */ var _styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/gallery.scss */ "./styles/gallery.scss");
+/* harmony import */ var _styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+/* harmony import */ var _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/gallery/london */ "./static/gallery/london.js");
+/* harmony import */ var _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/gallery/croatia */ "./static/gallery/croatia.js");
 
 
 
@@ -1671,174 +1673,364 @@ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__
 
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-project.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/gallery.js";
 
 
 
 
-var SingleSite =
+
+
+var Gallery =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(SingleSite, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Gallery, _React$Component);
 
-  function SingleSite() {
+  function Gallery() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, SingleSite);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Gallery);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SingleSite)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Gallery)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      projects: _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__,
-      content: ''
+      gallery: _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__["default"],
+      current: 0,
+      active: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "imageClick", function (current) {
+      _this.setState({
+        current: current,
+        active: true
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "hideLb", function () {
+      _this.setState({
+        active: false
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "next", function () {
+      if (_this.state.current < _this.state.gallery.length - 1) {
+        _this.setState({
+          current: _this.state.current + 1
+        });
+      } else {
+        _this.setState({
+          current: 0
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "prev", function () {
+      if (_this.state.current > 0) {
+        _this.setState({
+          current: _this.state.current - 1
+        });
+      } else {
+        _this.setState({
+          current: _this.state.gallery.length - 1
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "changeGallery", function (name) {
+      if (name === 'london') {
+        _this.setState({
+          gallery: _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__["default"]
+        });
+      }
+
+      if (name === 'croatia') {
+        _this.setState({
+          gallery: _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_11__["default"]
+        });
+      }
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(SingleSite, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      this.setState({
-        content: this.state.projects.main[this.props.url.query.current].content
-      });
-    }
-  }, {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Gallery, [{
     key: "render",
     value: function render() {
-      console.log(this.state.content); // click of card
-      // gets position inside object
-      // loads that object into blogpage component
+      var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__img",
-        style: {
-          backgroundImage: "url(".concat(this.state.content.largeImg, ")")
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__content",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title title--md",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }, this.state.content.title), this.state.content.topContent.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-          key: index,
-          href: item,
-          className: "overview__text",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 53
-          },
-          __self: this
-        }, item);
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title--md title--md",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }, this.state.content.titleTwo), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
-        className: "overview__code",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      }, this.state.content.code.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-          key: index,
-          className: "overview__code__item",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 63
-          },
-          __self: this
-        }, "- ", item);
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title--md title--md",
+        className: "lightbox__bg ".concat(this.state.active ? 'show' : 'hide'),
+        onClick: this.hideLb,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 68
         },
         __self: this
-      }, this.state.content.titleThree), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__links",
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "lightbox__btns",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 72
         },
         __self: this
-      }, this.state.content.code.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--ldn",
+        onClick: function onClick() {
+          return _this2.changeGallery('london');
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, "London"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--berlin",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "Berlin"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--croatia",
+        onClick: function onClick() {
+          return _this2.changeGallery('croatia');
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, "Croatia"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--croatia",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, "Corsica")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "gallery",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "thumbnails",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, this.state.gallery.map(function (item, index) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: "thumbnails__thumbnail",
+          style: {
+            backgroundImage: "url(".concat(item.thumbnail, ")")
+          },
           key: index,
-          href: item,
-          className: "overview__links__link",
+          onClick: function onClick() {
+            return _this2.imageClick(index);
+          },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 82
           },
           __self: this
-        }, item);
-      }))))));
+        });
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "".concat(this.state.active ? 'show' : 'hide'),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__close",
+        src: "/lightbox/close.svg",
+        onClick: this.hideLb,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__arrow lightbox__arrow--prev",
+        src: "/lightbox/prev.svg",
+        onClick: this.prev,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__img ".concat(this.state.active ? 'show' : 'hide'),
+        src: this.state.gallery[this.state.current].lightbox,
+        alt: this.state.current.alt,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+        className: "lightbox__caption",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100
+        },
+        __self: this
+      }, this.state.gallery[this.state.current].caption), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__arrow lightbox__arrow--next",
+        src: "/lightbox/next.svg",
+        onClick: this.next,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 101
+        },
+        __self: this
+      })));
     }
   }]);
 
-  return SingleSite;
+  return Gallery;
 }(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (SingleSite);
+/* harmony default export */ __webpack_exports__["default"] = (Gallery);
 
 /***/ }),
 
-/***/ "./static/content/projects.json":
-/*!**************************************!*\
-  !*** ./static/content/projects.json ***!
-  \**************************************/
-/*! exports provided: main, default */
-/***/ (function(module) {
+/***/ "./static/gallery/croatia.js":
+/*!***********************************!*\
+  !*** ./static/gallery/croatia.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {"main":[{"front":{"title":"first project","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"titleThree":"links","links":["google, asos"]}},{"front":{"title":"second project","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var gallery = [{
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: 'cro'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
+
+/***/ }),
+
+/***/ "./static/gallery/london.js":
+/*!**********************************!*\
+  !*** ./static/gallery/london.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var gallery = [{
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
 
 /***/ }),
 
@@ -1853,14 +2045,25 @@ module.exports = {"main":[{"front":{"title":"first project","thumbNail":"static/
 
 /***/ }),
 
-/***/ 7:
-/*!***************************************!*\
-  !*** multi ./pages/single-project.js ***!
-  \***************************************/
+/***/ "./styles/gallery.scss":
+/*!*****************************!*\
+  !*** ./styles/gallery.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 5:
+/*!********************************!*\
+  !*** multi ./pages/gallery.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-project.js */"./pages/single-project.js");
+module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/gallery.js */"./pages/gallery.js");
 
 
 /***/ }),
@@ -2042,4 +2245,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=single-project.js.map
+//# sourceMappingURL=gallery.js.map
