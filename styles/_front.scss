@@ -1,11 +1,36 @@
 .front {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     text-align: center;
 
     &__card {
-        width: 23%;
+        width: 100%;
+        margin-bottom: map-get($spacing, 8);
+
+        @include breakpoint-min(sm) {
+            width: 46.5%;
+            margin-right: 7%;
+
+            &:nth-child(2) {
+                margin-right: 0%;
+            }
+        }
+
+        @include breakpoint-min(md) {
+            width: 21.6%;
+            margin-right: 4.5%;
+
+            &:nth-child(2) {
+                margin-right: 4.5%;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0%;
+            }
+
+        }
+
+  
 
         &__group {
             display: flex;

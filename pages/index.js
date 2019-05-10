@@ -5,17 +5,20 @@ import Front from '../components/Front.js';
 class Index extends React.Component {
   state = {
     blog,
-    front: []
+    front: [],
+    currentBlog: '',
   };
 
 
+  cardClick = (pos) => {
+    console.log(pos);
+  }
+
   render() {
  
-    console.log(this.state.blog);
-
-    const front = this.state.blog.main.map((item,index) => 
-      <p key={index}>{item.front.title}</p>
-    )
+    // click of card
+    // gets position inside object
+    // loads that object into blogpage component
 
 
     return (
@@ -26,7 +29,7 @@ class Index extends React.Component {
       
           {this.state.blog.main.map((item, index) => (
 
-                <Front info={item.front} key={index}/>
+                <Front info={item.front} key={index} curr={index} cardClick={this.cardClick}/>
           ))}
 
         </div>

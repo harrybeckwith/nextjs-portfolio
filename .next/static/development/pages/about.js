@@ -212,7 +212,7 @@ function Header(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container-outter",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11

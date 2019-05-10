@@ -8,7 +8,7 @@ export default function Header(props) {
         Naomi
       </h3>
       <div className="container-fixed">
-        <div className="container-outter">
+        <div className="container">
           <div className="top-bar">
             <img
               onClick={props.toggleMenu}
