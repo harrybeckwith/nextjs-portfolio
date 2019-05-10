@@ -1,10 +1,10 @@
 import Layout from "../components/MyLayout.js";
-import sites from "../static/content/sites.json";
+import projects from "../static/content/projects.json";
 
 
 class SingleSite extends React.Component {
   state = {
-    sites,
+    projects,
     content: '',
   }
 
@@ -12,7 +12,7 @@ class SingleSite extends React.Component {
   componentWillMount() {
 
     this.setState({
-      content: this.state.sites.main[this.props.url.query.current].content
+      content: this.state.projects.main[this.props.url.query.current].content
     })
 
 

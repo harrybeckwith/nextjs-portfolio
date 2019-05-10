@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1643,10 +1643,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/single-site.js":
-/*!******************************!*\
-  !*** ./pages/single-site.js ***!
-  \******************************/
+/***/ "./pages/single-project.js":
+/*!*********************************!*\
+  !*** ./pages/single-project.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1662,10 +1662,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/sites.json */ "./static/content/sites.json");
-var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/sites.json */ "./static/content/sites.json", 1);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/projects.json */ "./static/content/projects.json");
+var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/projects.json */ "./static/content/projects.json", 1);
 
 
 
@@ -1673,8 +1671,7 @@ var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PUR
 
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-site.js";
-
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-project.js";
 
 
 
@@ -1698,7 +1695,7 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SingleSite)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      sites: _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__,
+      projects: _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__,
       content: ''
     });
 
@@ -1709,9 +1706,8 @@ function (_React$Component) {
     key: "componentWillMount",
     value: function componentWillMount() {
       this.setState({
-        content: this.state.sites.main[this.props.url.query.current].content
+        content: this.state.projects.main[this.props.url.query.current].content
       });
-      console.log(this.state);
     }
   }, {
     key: "render",
@@ -1835,14 +1831,14 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./static/content/sites.json":
-/*!***********************************!*\
-  !*** ./static/content/sites.json ***!
-  \***********************************/
+/***/ "./static/content/projects.json":
+/*!**************************************!*\
+  !*** ./static/content/projects.json ***!
+  \**************************************/
 /*! exports provided: main, default */
 /***/ (function(module) {
 
-module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"titleThree":"links","links":["google, asos"]}},{"front":{"title":"second tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
+module.exports = {"main":[{"front":{"title":"first project","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"titleThree":"links","links":["google, asos"]}},{"front":{"title":"second project","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
 
 /***/ }),
 
@@ -1857,14 +1853,14 @@ module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/im
 
 /***/ }),
 
-/***/ 6:
-/*!************************************!*\
-  !*** multi ./pages/single-site.js ***!
-  \************************************/
+/***/ 7:
+/*!***************************************!*\
+  !*** multi ./pages/single-project.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-site.js */"./pages/single-site.js");
+module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-project.js */"./pages/single-project.js");
 
 
 /***/ }),
@@ -2046,4 +2042,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=single-site.js.map
+//# sourceMappingURL=single-project.js.map

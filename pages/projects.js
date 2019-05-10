@@ -1,11 +1,11 @@
 import Layout from "../components/MyLayout.js";
-import sites from "../static/content/sites.json";
+import projects from "../static/content/projects.json";
 import Front from '../components/Front.js';
 import Router from "next/router";
 
 class Index extends React.Component {
   state = {
-    sites,
+    projects,
     currentsites: '',
   };
 
@@ -13,7 +13,7 @@ class Index extends React.Component {
   cardClick = (current) => {
 
     Router.push({
-        pathname: '/single-site',
+        pathname: '/single-project',
         query: {current}
     })
   }
@@ -22,10 +22,10 @@ class Index extends React.Component {
 
     return (
       <Layout>
-
+          
       <div className="front">
       
-          {this.state.sites.main.map((item, index) => (
+          {this.state.projects.main.map((item, index) => (
 
                 <Front info={item.front} key={index} curr={index} cardClick={this.cardClick}/>
           ))}

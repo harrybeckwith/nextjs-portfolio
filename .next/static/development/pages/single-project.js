@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/single-site.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/single-project.js"],{
 
 /***/ "./components/ActiveLink.js":
 /*!**********************************!*\
@@ -6315,21 +6315,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsingle-site&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-site.js!./":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsingle-site&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-site.js ***!
-  \*******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsingle-project&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-project.js!./":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsingle-project&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-project.js ***!
+  \*************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/single-site", function() {
-      var page = __webpack_require__(/*! ./pages/single-site.js */ "./pages/single-site.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/single-project", function() {
+      var page = __webpack_require__(/*! ./pages/single-project.js */ "./pages/single-project.js")
       if(true) {
-        module.hot.accept(/*! ./pages/single-site.js */ "./pages/single-site.js", function() {
-          if(!next.router.components["/single-site"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/single-site.js */ "./pages/single-site.js")
-          next.router.update("/single-site", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/single-project.js */ "./pages/single-project.js", function() {
+          if(!next.router.components["/single-project"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/single-project.js */ "./pages/single-project.js")
+          next.router.update("/single-project", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10574,10 +10574,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/single-site.js":
-/*!******************************!*\
-  !*** ./pages/single-site.js ***!
-  \******************************/
+/***/ "./pages/single-project.js":
+/*!*********************************!*\
+  !*** ./pages/single-project.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10593,10 +10593,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/sites.json */ "./static/content/sites.json");
-var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/sites.json */ "./static/content/sites.json", 1);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/projects.json */ "./static/content/projects.json");
+var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/projects.json */ "./static/content/projects.json", 1);
 
 
 
@@ -10604,8 +10602,7 @@ var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PUR
 
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-site.js";
-
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-project.js";
 
 
 
@@ -10629,7 +10626,7 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SingleSite)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      sites: _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__,
+      projects: _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__,
       content: ''
     });
 
@@ -10640,9 +10637,8 @@ function (_React$Component) {
     key: "componentWillMount",
     value: function componentWillMount() {
       this.setState({
-        content: this.state.sites.main[this.props.url.query.current].content
+        content: this.state.projects.main[this.props.url.query.current].content
       });
-      console.log(this.state);
     }
   }, {
     key: "render",
@@ -10766,25 +10762,25 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./static/content/sites.json":
-/*!***********************************!*\
-  !*** ./static/content/sites.json ***!
-  \***********************************/
+/***/ "./static/content/projects.json":
+/*!**************************************!*\
+  !*** ./static/content/projects.json ***!
+  \**************************************/
 /*! exports provided: main, default */
 /***/ (function(module) {
 
-module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"titleThree":"links","links":["google, asos"]}},{"front":{"title":"second tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
+module.exports = {"main":[{"front":{"title":"first project","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"titleThree":"links","links":["google, asos"]}},{"front":{"title":"second project","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
 
 /***/ }),
 
-/***/ 5:
-/*!***********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fsingle-site&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-site.js ***!
-  \***********************************************************************************************************************************************/
+/***/ 6:
+/*!*****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fsingle-project&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-project.js ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsingle-site&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-site.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsingle-site&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-site.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsingle-project&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-project.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsingle-project&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fsingle-project.js!./");
 
 
 /***/ }),
@@ -10800,5 +10796,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=single-site.js.map
+},[[6,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=single-project.js.map
