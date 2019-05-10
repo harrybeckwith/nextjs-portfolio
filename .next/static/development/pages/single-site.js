@@ -55,7 +55,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Links.js */ "./components/Links.js");
+/* harmony import */ var _components_SocialIcons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SocialIcons */ "./components/SocialIcons.js");
 var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/Footer.js";
+
 
 
 
@@ -64,75 +66,47 @@ var Footer = function Footer() {
     className: "footer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__inside",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__icons menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/naomijoanna/?hl=en",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/instagram-logo.svg",
-    alt: "instagram logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SocialIcons__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 10
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://twitter.com/naomijowhite?lang=en-gb",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/twitter-black-shape.svg",
-    alt: "twitter logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__note",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -140,27 +114,27 @@ var Footer = function Footer() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 14
     },
     __self: this
   }, "Created by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "hl",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 15
     },
     __self: this
   }, "h")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__links",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 20
     },
     __self: this
   })))));
@@ -185,7 +159,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Links_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Links.js */ "./components/Links.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_SocialIcons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SocialIcons */ "./components/SocialIcons.js");
 var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/Header.js";
+
 
 
 
@@ -194,35 +170,35 @@ function Header(props) {
     className: "header ".concat(props.activeMenu ? "active-menu" : ""),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "title__underline title--md title__sm-only header__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-fixed",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "top-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -232,109 +208,81 @@ function Header(props) {
     alt: "menu-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "title__underline title--md title__md-only",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, "title"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/naomijoanna/?hl=en",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/instagram-logo.svg",
-    alt: "instagram logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SocialIcons__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 28
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://twitter.com/naomijowhite?lang=en-gb",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/twitter-black-shape.svg",
-    alt: "twitter logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 33
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "menu__nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 36
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__about__inside",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -343,28 +291,28 @@ function Header(props) {
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 40
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "menu__title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 45
     },
     __self: this
   }, "Hi."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "menu__desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 46
     },
     __self: this
   }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -372,7 +320,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -381,7 +329,7 @@ function Header(props) {
     alt: "instagram logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 55
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -389,7 +337,7 @@ function Header(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -398,7 +346,7 @@ function Header(props) {
     alt: "twitter logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 65
     },
     __self: this
   }))))))));
@@ -592,6 +540,85 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_10___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/SocialIcons.js":
+/*!***********************************!*\
+  !*** ./components/SocialIcons.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/SocialIcons.js";
+
+
+var SocialIcons = function SocialIcons() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.instagram.com/harry_j_beckwith/?hl=en",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "menu__icons__icon",
+    src: "/static/icons/instagram-logo.svg",
+    alt: "instagram logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/harrybeckwith",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "menu__icons__icon",
+    src: "/static/icons/github-logo.svg",
+    alt: "github logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://medium.com/@harrybeckwith",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "menu__icons__icon",
+    src: "/static/icons/medium-logo.svg",
+    alt: "medium logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SocialIcons);
 
 /***/ }),
 
@@ -10646,52 +10673,51 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "overview__img",
+        style: {
+          backgroundImage: "url(".concat(this.state.content.largeImg, ")")
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        className: "overview__img__pic",
-        src: this.state.content.largeImg,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "overview__content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title",
+        className: "overview__title title--md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
-      }, this.state.content.title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-        className: "overview__text",
+      }, this.state.content.title), this.state.content.topContent.map(function (item, index) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+          key: index,
+          href: item,
+          className: "overview__text",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 53
+          },
+          __self: this
+        }, item);
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
+        className: "overview__title--md title--md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, this.state.content.topContent), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }, this.state.content.titleTwo), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "overview__code",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       }, this.state.content.code.map(function (item, index) {
@@ -10700,22 +10726,36 @@ function (_React$Component) {
           className: "overview__code__item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 63
           },
           __self: this
-        }, item);
-      })), this.state.content.code.map(function (item, index) {
+        }, "- ", item);
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
+        className: "overview__title--md title--md",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, this.state.content.titleThree), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "overview__links",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, this.state.content.code.map(function (item, index) {
         return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
           key: index,
           href: item,
-          className: "overview__link",
+          className: "overview__links__link",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 74
           },
           __self: this
         }, item);
-      })))));
+      }))))));
     }
   }]);
 
@@ -10733,7 +10773,7 @@ function (_React$Component) {
 /*! exports provided: main, default */
 /***/ (function(module) {
 
-module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}},{"front":{"title":"second tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
+module.exports = {"main":[{"front":{"title":"first tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"first site","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"titleThree":"links","links":["google, asos"]}},{"front":{"title":"second tilte","thumbNail":"static/images/blog/example1.jpg","date":"May 2019","tag":["travel","food"]},"content":{"largeImg":"static/images/blog/example1.jpg","title":"second tilte","topContent":["1 Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio.","Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi.Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacini odio."],"titleTwo":"code used","code":["html","sass","javascript","vue"],"links":["google, asos"]}}]};
 
 /***/ }),
 

@@ -1,5 +1,6 @@
 import Links from "../components/Links.js";
 import Link from "next/link";
+import SocialIcons from '../components/SocialIcons';
 
 export default function Header(props) {
   return (
@@ -24,26 +25,7 @@ export default function Header(props) {
               <Link href="/"><a>title</a></Link>
             </h3>
             <div className="menu__icons">
-              <a
-                href="https://www.instagram.com/naomijoanna/?hl=en"
-                target="_blank"
-              >
-                <img
-                  className="menu__icons__icon"
-                  src="/static/icons/instagram-logo.svg"
-                  alt="instagram logo"
-                />
-              </a>
-              <a
-                href="https://twitter.com/naomijowhite?lang=en-gb"
-                target="_blank"
-              >
-                <img
-                  className="menu__icons__icon"
-                  src="/static/icons/twitter-black-shape.svg"
-                  alt="twitter logo"
-                />
-              </a>
+              <SocialIcons/>
             </div>
           </div>
         </div>
