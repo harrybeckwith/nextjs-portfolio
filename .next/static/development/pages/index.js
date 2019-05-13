@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/projects.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/ActiveLink.js":
 /*!**********************************!*\
@@ -141,86 +141,6 @@ var Footer = function Footer() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
-/***/ "./components/Front.js":
-/*!*****************************!*\
-  !*** ./components/Front.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/components/Front.js";
-
-
-var Front = function Front(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__card",
-    onClick: function onClick() {
-      return props.cardClick(props.curr);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "front__img",
-    src: "".concat(props.info.thumbNail),
-    alt: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text__sm text__light",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, props.info.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "title--md title__underline__sm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, props.info.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "front__card__group text__light text__sm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, props.info.tag.map(function (item, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      key: index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, item);
-  }).reduce(function (prev, curr) {
-    return [prev, ',', curr];
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Front);
 
 /***/ }),
 
@@ -367,7 +287,7 @@ function Header(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "menu__avatar",
-    src: "/static/images/naomi.png",
+    src: "/static/images/avatar.png",
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
@@ -388,48 +308,34 @@ function Header(props) {
       lineNumber: 46
     },
     __self: this
-  }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__icons",
+  }, "Hello. Welcome to my portfolio, feel free to check out some my latest work as a front end developer. Current working with Vue js and React js."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "menu__desc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/naomijoanna/?hl=en",
-    target: "_blank",
+  }, "Feel free to contact me at ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "mailto:harryjbeckwith@gmail.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "harryjbeckwith@gmail.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/instagram-logo.svg",
-    alt: "instagram logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SocialIcons__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 52
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://twitter.com/naomijowhite?lang=en-gb",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/twitter-black-shape.svg",
-    alt: "twitter logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }))))))));
+  })))))));
 }
 
 /***/ }),
@@ -6395,21 +6301,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fprojects.js!./":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fprojects.js ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js!./":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/projects", function() {
-      var page = __webpack_require__(/*! ./pages/projects.js */ "./pages/projects.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/projects.js */ "./pages/projects.js", function() {
-          if(!next.router.components["/projects"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/projects.js */ "./pages/projects.js")
-          next.router.update("/projects", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10654,139 +10560,70 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/projects.js":
-/*!***************************!*\
-  !*** ./pages/projects.js ***!
-  \***************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/projects.json */ "./static/content/projects.json");
-var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/projects.json */ "./static/content/projects.json", 1);
-/* harmony import */ var _components_Front_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Front.js */ "./components/Front.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/index.js";
 
 
 
-
-
-
-
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/projects.js";
-
-
-
-
-
-
-var Index =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, _React$Component);
-
-  function Index() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      projects: _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__,
-      currentsites: ''
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "cardClick", function (current) {
-      next_router__WEBPACK_IMPORTED_MODULE_11___default.a.push({
-        pathname: '/single-project',
-        query: {
-          current: current
-        }
-      });
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "front",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }, this.state.projects.main.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Front_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
-          info: item.front,
-          key: index,
-          curr: index,
-          cardClick: _this2.cardClick,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30
-          },
-          __self: this
-        });
-      })));
-    }
-  }]);
-
-  return Index;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+var Index = function Index() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home__content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Hello"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""))));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ "./static/content/projects.json":
-/*!**************************************!*\
-  !*** ./static/content/projects.json ***!
-  \**************************************/
-/*! exports provided: main, default */
-/***/ (function(module) {
-
-module.exports = {"main":[{"front":{"title":"lightbox","thumbNail":"static/images/projects/lightbox.png","date":"March 2019","tag":["vue","lightbox","javascript"]},"content":{"largeImg":"static/images/projects/lightbox.png","title":"lightbox","topContent":["Using vue js to create a lightbox with vue transitions to create a fade effect one the slider is in action. Making use the vue syntax to loop through an array of objects that holds the lightbox data. Using click events and basic logic to move next and prev throug the slider."],"titleTwo":"code used","code":["vue","sass","javascript","html"],"titleThree":"links","links":[{"link":"https://medium.com/js-dojo/how-to-create-a-vue-js-lightbox-8554a88aae7a","text":"medium blog"}]}},{"front":{"title":"glossary search","thumbNail":"static/images/projects/glossary.png","date":"May 2019","tag":["ES6","Javascript"]},"content":{"largeImg":"static/images/projects/glossary.png","title":"glossary search","topContent":["Using ES6 javaScript to loop through data and provide a search functionality that highlights matching words when typed. Users can click letters to bring up matching words of type the words. Using an mvc patttern to keep the code oragnised and clean. Working with the designers to talk through functionality and discussing any issues that may arise from the inital design."],"titleTwo":"code used","code":["es6","sass","javascript","mvc"],"links":[{"link":"https://www.casino.ca/guides/terminology/","text":"glossary search"}]}},{"front":{"title":"odds of tube delay","thumbNail":"static/images/projects/train.png","date":"April 2019","tag":["ES6","Javascript"]},"content":{"largeImg":"static/images/projects/train.png","title":"odds of tube delay","topContent":["Creating an intertative page that lets users know details on london tube delays. Usig ES6 Javascrip to create an engaging tube map to show the various tube lins on click. Displaying data in a presentable way that is easy to read and a engage with, through the use of drop downs and toggles. This page was used as marketing piece for City AM, and the Londonist, links available below."],"titleTwo":"code used","code":["es6","sass","javascript","mvc"],"links":[{"link":"http://www.cityam.com/274391/which-london-underground-line-suffers-worst-delays","text":"City AM"},{"link":"https://londonist.com/london/transport/tube-delays-by-line","text":"Lononist"}]}}]};
-
-/***/ }),
-
-/***/ 6:
-/*!*****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fprojects.js ***!
-  \*****************************************************************************************************************************************/
+/***/ 5:
+/*!******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fprojects.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fprojects.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -10802,5 +10639,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=projects.js.map
+},[[5,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=index.js.map

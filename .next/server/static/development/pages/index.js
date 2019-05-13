@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -380,7 +380,7 @@ function Header(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "menu__avatar",
-    src: "/static/images/naomi.png",
+    src: "/static/images/avatar.png",
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
@@ -401,48 +401,34 @@ function Header(props) {
       lineNumber: 46
     },
     __self: this
-  }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__icons",
+  }, "Hello. Welcome to my portfolio, feel free to check out some my latest work as a front end developer. Current working with Vue js and React js."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "menu__desc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/naomijoanna/?hl=en",
-    target: "_blank",
+  }, "Feel free to contact me at ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "mailto:harryjbeckwith@gmail.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "harryjbeckwith@gmail.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/instagram-logo.svg",
-    alt: "instagram logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SocialIcons__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 52
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://twitter.com/naomijowhite?lang=en-gb",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/twitter-black-shape.svg",
-    alt: "twitter logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }))))))));
+  })))))));
 }
 
 /***/ }),
@@ -1643,199 +1629,59 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/single-site.js":
-/*!******************************!*\
-  !*** ./pages/single-site.js ***!
-  \******************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/sites.json */ "./static/content/sites.json");
-var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/sites.json */ "./static/content/sites.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/index.js";
 
 
 
+var Index = function Index() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home__content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Hello"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""))));
+};
 
-
-
-
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-site.js";
-
-
-
-
-var SingleSite =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(SingleSite, _React$Component);
-
-  function SingleSite() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, SingleSite);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SingleSite)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      sites: _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__,
-      content: ''
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(SingleSite, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      this.setState({
-        content: this.state.sites.main[this.props.url.query.current].content
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__img",
-        style: {
-          backgroundImage: "url(".concat(this.state.content.largeImg, ")")
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__content",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title title--md",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, this.state.content.title), this.state.content.topContent.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-          key: index,
-          href: item,
-          className: "overview__text",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 45
-          },
-          __self: this
-        }, item);
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title--md title--md",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }, this.state.content.titleTwo), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
-        className: "overview__code",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      }, this.state.content.code.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-          key: index,
-          className: "overview__code__item",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 55
-          },
-          __self: this
-        }, "- ", item);
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title--md title--md",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      }, this.state.content.titleThree), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__links",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        },
-        __self: this
-      }, this.state.content.links.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-          key: index,
-          href: item.link,
-          target: "_blank",
-          className: "overview__links__link",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 66
-          },
-          __self: this
-        }, item.text);
-      }))))));
-    }
-  }]);
-
-  return SingleSite;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (SingleSite);
-
-/***/ }),
-
-/***/ "./static/content/sites.json":
-/*!***********************************!*\
-  !*** ./static/content/sites.json ***!
-  \***********************************/
-/*! exports provided: main, default */
-/***/ (function(module) {
-
-module.exports = {"main":[{"front":{"title":"River Island","thumbNail":"static/images/sites/riverisland.png","date":"March 2018","tag":["cms","fashion","front end"]},"content":{"largeImg":"static/images/sites/riverisland.png","title":"River Island","topContent":["Working on the front end development and maintenance of www.riverisland.com. Working with the team to develop the website in line with business prioritisation. Creating a pixel perfect experiences across browsers and devices."],"titleTwo":"code used","code":["html","sass","JavaScript","jQuery"],"titleThree":"links","links":[{"link":"//www.riverisland.com","text":"riverisland"}]}},{"front":{"title":"horse racing","thumbNail":"static/images/sites/horseracing.png","date":"June 2018","tag":["racing","web development"]},"content":{"largeImg":"static/images/sites/horseracing.png","title":"horse racing","topContent":["Using html, sass, javaScript, php and vue js to create a unique looking website. Working as part of the front end development team at iTech Media within an agile enviroment. Making use of vue js by adding to certain components that use external data using axios to reach out to api's."],"titleTwo":"code used","code":["html","sass","javascript","vue","axios"],"links":[{"link":"//www.horseracing.co.uk","text":"horseracing"}]}},{"front":{"title":"online betting","thumbNail":"static/images/sites/onlinebetting.png","date":"oct 2018","tag":["sports","vue"]},"content":{"largeImg":"static/images/sites/onlinebetting.png","title":"online betting","topContent":["Using html, sass, javaScript, php and vue js to create a unique looking website. Working as part of the front end development team at iTech Media within an agile enviroment. Making use of vue js by adding to certain components that use external data using axios to reach out to api's."],"titleTwo":"code used","code":["html","sass","javascript","vue","axios"],"links":[{"link":"//www.onlinebetting.co.uk","text":"onlinebetting"}]}}]};
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
@@ -1850,14 +1696,14 @@ module.exports = {"main":[{"front":{"title":"River Island","thumbNail":"static/i
 
 /***/ }),
 
-/***/ 3:
-/*!************************************!*\
-  !*** multi ./pages/single-site.js ***!
-  \************************************/
+/***/ 6:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-site.js */"./pages/single-site.js");
+module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2039,4 +1885,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=single-site.js.map
+//# sourceMappingURL=index.js.map

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -380,7 +380,7 @@ function Header(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "menu__avatar",
-    src: "/static/images/naomi.png",
+    src: "/static/images/avatar.png",
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
@@ -401,48 +401,34 @@ function Header(props) {
       lineNumber: 46
     },
     __self: this
-  }, "Welcome to my blog. I document my adventures in travel, style, and food. Hope you have a nice stay!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "menu__icons",
+  }, "Hello. Welcome to my portfolio, feel free to check out some my latest work as a front end developer. Current working with Vue js and React js."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "menu__desc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.instagram.com/naomijoanna/?hl=en",
-    target: "_blank",
+  }, "Feel free to contact me at ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "mailto:harryjbeckwith@gmail.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "harryjbeckwith@gmail.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/instagram-logo.svg",
-    alt: "instagram logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SocialIcons__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 52
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://twitter.com/naomijowhite?lang=en-gb",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "menu__icons__icon",
-    src: "/static/icons/twitter-black-shape.svg",
-    alt: "twitter logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }))))))));
+  })))))));
 }
 
 /***/ }),
@@ -1643,10 +1629,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/single-project.js":
-/*!*********************************!*\
-  !*** ./pages/single-project.js ***!
-  \*********************************/
+/***/ "./pages/gallery.js":
+/*!**************************!*\
+  !*** ./pages/gallery.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1661,9 +1647,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/projects.json */ "./static/content/projects.json");
-var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/projects.json */ "./static/content/projects.json", 1);
+/* harmony import */ var _styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/gallery.scss */ "./styles/gallery.scss");
+/* harmony import */ var _styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+/* harmony import */ var _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/gallery/london */ "./static/gallery/london.js");
+/* harmony import */ var _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/gallery/croatia */ "./static/gallery/croatia.js");
 
 
 
@@ -1671,171 +1659,364 @@ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__
 
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-project.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/gallery.js";
 
 
 
 
-var SingleSite =
+
+
+var Gallery =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(SingleSite, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Gallery, _React$Component);
 
-  function SingleSite() {
+  function Gallery() {
     var _getPrototypeOf2;
 
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, SingleSite);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Gallery);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SingleSite)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Gallery)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      projects: _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__,
-      content: ''
+      gallery: _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__["default"],
+      current: 0,
+      active: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "imageClick", function (current) {
+      _this.setState({
+        current: current,
+        active: true
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "hideLb", function () {
+      _this.setState({
+        active: false
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "next", function () {
+      if (_this.state.current < _this.state.gallery.length - 1) {
+        _this.setState({
+          current: _this.state.current + 1
+        });
+      } else {
+        _this.setState({
+          current: 0
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "prev", function () {
+      if (_this.state.current > 0) {
+        _this.setState({
+          current: _this.state.current - 1
+        });
+      } else {
+        _this.setState({
+          current: _this.state.gallery.length - 1
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "changeGallery", function (name) {
+      if (name === 'london') {
+        _this.setState({
+          gallery: _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__["default"]
+        });
+      }
+
+      if (name === 'croatia') {
+        _this.setState({
+          gallery: _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_11__["default"]
+        });
+      }
     });
 
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(SingleSite, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      this.setState({
-        content: this.state.projects.main[this.props.url.query.current].content
-      });
-    }
-  }, {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Gallery, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview",
+        className: "lightbox__bg ".concat(this.state.active ? 'show' : 'hide'),
+        onClick: this.hideLb,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__img",
-        style: {
-          backgroundImage: "url(".concat(this.state.content.largeImg, ")")
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 68
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__content",
+        className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 71
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title title--md",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "lightbox__btns",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 72
         },
         __self: this
-      }, this.state.content.title), this.state.content.topContent.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--ldn",
+        onClick: function onClick() {
+          return _this2.changeGallery('london');
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, "London"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--berlin",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "Berlin"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--croatia",
+        onClick: function onClick() {
+          return _this2.changeGallery('croatia');
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, "Croatia"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "btn btn--croatia",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, "Corsica")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "gallery",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "thumbnails",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, this.state.gallery.map(function (item, index) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: "thumbnails__thumbnail",
+          style: {
+            backgroundImage: "url(".concat(item.thumbnail, ")")
+          },
           key: index,
-          href: item,
-          className: "overview__text",
+          onClick: function onClick() {
+            return _this2.imageClick(index);
+          },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41
+            lineNumber: 82
           },
           __self: this
-        }, item);
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title--md title--md",
+        });
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "".concat(this.state.active ? 'show' : 'hide'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 96
         },
         __self: this
-      }, this.state.content.titleTwo), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
-        className: "overview__code",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__close",
+        src: "/lightbox/close.svg",
+        onClick: this.hideLb,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 97
         },
         __self: this
-      }, this.state.content.code.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-          key: index,
-          className: "overview__code__item",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 51
-          },
-          __self: this
-        }, "- ", item);
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
-        className: "overview__title--md title--md",
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__arrow lightbox__arrow--prev",
+        src: "/lightbox/prev.svg",
+        onClick: this.prev,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 98
         },
         __self: this
-      }, this.state.content.titleThree), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "overview__links",
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__img ".concat(this.state.active ? 'show' : 'hide'),
+        src: this.state.gallery[this.state.current].lightbox,
+        alt: this.state.current.alt,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 99
         },
         __self: this
-      }, this.state.content.links.map(function (item, index) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-          key: index,
-          href: item.link,
-          target: "_blank",
-          className: "overview__links__link",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 62
-          },
-          __self: this
-        }, item.text);
-      }))))));
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+        className: "lightbox__caption",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100
+        },
+        __self: this
+      }, this.state.gallery[this.state.current].caption), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+        className: "lightbox__arrow lightbox__arrow--next",
+        src: "/lightbox/next.svg",
+        onClick: this.next,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 101
+        },
+        __self: this
+      })));
     }
   }]);
 
-  return SingleSite;
+  return Gallery;
 }(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (SingleSite);
+/* harmony default export */ __webpack_exports__["default"] = (Gallery);
 
 /***/ }),
 
-/***/ "./static/content/projects.json":
-/*!**************************************!*\
-  !*** ./static/content/projects.json ***!
-  \**************************************/
-/*! exports provided: main, default */
-/***/ (function(module) {
+/***/ "./static/gallery/croatia.js":
+/*!***********************************!*\
+  !*** ./static/gallery/croatia.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {"main":[{"front":{"title":"lightbox","thumbNail":"static/images/projects/lightbox.png","date":"March 2019","tag":["vue","lightbox","javascript"]},"content":{"largeImg":"static/images/projects/lightbox.png","title":"lightbox","topContent":["Using vue js to create a lightbox with vue transitions to create a fade effect one the slider is in action. Making use the vue syntax to loop through an array of objects that holds the lightbox data. Using click events and basic logic to move next and prev throug the slider."],"titleTwo":"code used","code":["vue","sass","javascript","html"],"titleThree":"links","links":[{"link":"https://medium.com/js-dojo/how-to-create-a-vue-js-lightbox-8554a88aae7a","text":"medium blog"}]}},{"front":{"title":"glossary search","thumbNail":"static/images/projects/glossary.png","date":"May 2019","tag":["ES6","Javascript"]},"content":{"largeImg":"static/images/projects/glossary.png","title":"glossary search","topContent":["Using ES6 javaScript to loop through data and provide a search functionality that highlights matching words when typed. Users can click letters to bring up matching words of type the words. Using an mvc patttern to keep the code oragnised and clean. Working with the designers to talk through functionality and discussing any issues that may arise from the inital design."],"titleTwo":"code used","code":["es6","sass","javascript","mvc"],"links":[{"link":"https://www.casino.ca/guides/terminology/","text":"glossary search"}]}},{"front":{"title":"odds of tube delay","thumbNail":"static/images/projects/train.png","date":"April 2019","tag":["ES6","Javascript"]},"content":{"largeImg":"static/images/projects/train.png","title":"odds of tube delay","topContent":["Creating an intertative page that lets users know details on london tube delays. Usig ES6 Javascrip to create an engaging tube map to show the various tube lins on click. Displaying data in a presentable way that is easy to read and a engage with, through the use of drop downs and toggles. This page was used as marketing piece for City AM, and the Londonist, links available below."],"titleTwo":"code used","code":["es6","sass","javascript","mvc"],"links":[{"link":"http://www.cityam.com/274391/which-london-underground-line-suffers-worst-delays","text":"City AM"},{"link":"https://londonist.com/london/transport/tube-delays-by-line","text":"Lononist"}]}}]};
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var gallery = [{
+  thumbnail: 'static/images/gallery/croatia/1.jpg',
+  lightbox: 'static/images/gallery/croatia/1.jpg',
+  alt: "croatia",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/gallery/croatia/2.jpg',
+  lightbox: 'static/images/gallery/croatia/2.jpg',
+  alt: "croatia",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/gallery/croatia/3.jpg',
+  lightbox: 'static/images/gallery/croatia/3.jpg',
+  alt: "croatia",
+  caption: '3'
+}, {
+  thumbnail: 'static/images/gallery/croatia/4.jpg',
+  lightbox: 'static/images/gallery/croatia/4.jpg',
+  alt: "croatia",
+  caption: '4'
+}, {
+  thumbnail: 'static/images/gallery/croatia/5.jpg',
+  lightbox: 'static/images/gallery/croatia/5.jpg',
+  alt: "croatia",
+  caption: '5'
+}, {
+  thumbnail: 'static/images/gallery/croatia/6.jpg',
+  lightbox: 'static/images/gallery/croatia/6.jpg',
+  alt: "croatia",
+  caption: '6'
+}, {
+  thumbnail: 'static/images/gallery/croatia/7.jpg',
+  lightbox: 'static/images/gallery/croatia/7.jpg',
+  alt: "croatia",
+  caption: '7'
+}, {
+  thumbnail: 'static/images/gallery/croatia/8.jpg',
+  lightbox: 'static/images/gallery/croatia/8.jpg',
+  alt: "croatia",
+  caption: '8'
+}, {
+  thumbnail: 'static/images/gallery/croatia/9.jpg',
+  lightbox: 'static/images/gallery/croatia/9.jpg',
+  alt: "croatia",
+  caption: '9'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
+
+/***/ }),
+
+/***/ "./static/gallery/london.js":
+/*!**********************************!*\
+  !*** ./static/gallery/london.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var gallery = [{
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/blog/example1.jpg',
+  lightbox: 'static/images/blog/example1.jpg',
+  alt: "img",
+  caption: '2'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
 
 /***/ }),
 
@@ -1850,14 +2031,25 @@ module.exports = {"main":[{"front":{"title":"lightbox","thumbNail":"static/image
 
 /***/ }),
 
-/***/ 4:
-/*!***************************************!*\
-  !*** multi ./pages/single-project.js ***!
-  \***************************************/
+/***/ "./styles/gallery.scss":
+/*!*****************************!*\
+  !*** ./styles/gallery.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 3:
+/*!********************************!*\
+  !*** multi ./pages/gallery.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-project.js */"./pages/single-project.js");
+module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/gallery.js */"./pages/gallery.js");
 
 
 /***/ }),
@@ -2039,4 +2231,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=single-project.js.map
+//# sourceMappingURL=gallery.js.map

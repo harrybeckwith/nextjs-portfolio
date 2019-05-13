@@ -39,35 +39,17 @@ export default function Header(props) {
             <div className="menu__about__inside">
               <img
                 className="menu__avatar"
-                src="/static/images/naomi.png"
+                src="/static/images/avatar.png"
                 alt="avatar"
               />
               <h3 className="menu__title">Hi.</h3>
               <p className="menu__desc">
-                Welcome to my blog. I document my adventures in travel, style,
-                and food. Hope you have a nice stay!
+               Hello. Welcome to my portfolio, feel free to check out some my latest work as a front end developer.
+               Current working with Vue js and React js.
               </p>
+              <p className="menu__desc">Feel free to contact me at <a href="mailto:harryjbeckwith@gmail.com">harryjbeckwith@gmail.com</a></p>
               <div className="menu__icons">
-                <a
-                  href="https://www.instagram.com/naomijoanna/?hl=en"
-                  target="_blank"
-                >
-                  <img
-                    className="menu__icons__icon"
-                    src="/static/icons/instagram-logo.svg"
-                    alt="instagram logo"
-                  />
-                </a>
-                <a
-                  href="https://twitter.com/naomijowhite?lang=en-gb"
-                  target="_blank"
-                >
-                  <img
-                    className="menu__icons__icon"
-                    src="/static/icons/twitter-black-shape.svg"
-                    alt="twitter logo"
-                  />
-                </a>
+                <SocialIcons/>
               </div>
             </div>
           </div>
