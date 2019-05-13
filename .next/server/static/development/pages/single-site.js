@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1643,10 +1643,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/single-project.js":
-/*!*********************************!*\
-  !*** ./pages/single-project.js ***!
-  \*********************************/
+/***/ "./pages/single-site.js":
+/*!******************************!*\
+  !*** ./pages/single-site.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1662,8 +1662,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/projects.json */ "./static/content/projects.json");
-var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/projects.json */ "./static/content/projects.json", 1);
+/* harmony import */ var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/content/sites.json */ "./static/content/sites.json");
+var _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/content/sites.json */ "./static/content/sites.json", 1);
 
 
 
@@ -1671,7 +1671,7 @@ var _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__
 
 
 
-var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-project.js";
+var _jsxFileName = "/Users/harry.beckwith/Desktop/port/pages/single-site.js";
 
 
 
@@ -1695,7 +1695,7 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(SingleSite)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      projects: _static_content_projects_json__WEBPACK_IMPORTED_MODULE_9__,
+      sites: _static_content_sites_json__WEBPACK_IMPORTED_MODULE_9__,
       content: ''
     });
 
@@ -1706,7 +1706,7 @@ function (_React$Component) {
     key: "componentWillMount",
     value: function componentWillMount() {
       this.setState({
-        content: this.state.projects.main[this.props.url.query.current].content
+        content: this.state.sites.main[this.props.url.query.current].content
       });
     }
   }, {
@@ -1715,21 +1715,21 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "overview",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "overview__container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -1739,21 +1739,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 32
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "overview__content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
         className: "overview__title title--md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 40
         },
         __self: this
       }, this.state.content.title), this.state.content.topContent.map(function (item, index) {
@@ -1763,7 +1763,7 @@ function (_React$Component) {
           className: "overview__text",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41
+            lineNumber: 45
           },
           __self: this
         }, item);
@@ -1771,14 +1771,14 @@ function (_React$Component) {
         className: "overview__title--md title--md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 48
         },
         __self: this
       }, this.state.content.titleTwo), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "overview__code",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 52
         },
         __self: this
       }, this.state.content.code.map(function (item, index) {
@@ -1787,7 +1787,7 @@ function (_React$Component) {
           className: "overview__code__item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 55
           },
           __self: this
         }, "- ", item);
@@ -1795,14 +1795,14 @@ function (_React$Component) {
         className: "overview__title--md title--md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 60
         },
         __self: this
       }, this.state.content.titleThree), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "overview__links",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 64
         },
         __self: this
       }, this.state.content.links.map(function (item, index) {
@@ -1813,7 +1813,7 @@ function (_React$Component) {
           className: "overview__links__link",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 66
           },
           __self: this
         }, item.text);
@@ -1828,14 +1828,14 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./static/content/projects.json":
-/*!**************************************!*\
-  !*** ./static/content/projects.json ***!
-  \**************************************/
+/***/ "./static/content/sites.json":
+/*!***********************************!*\
+  !*** ./static/content/sites.json ***!
+  \***********************************/
 /*! exports provided: main, default */
 /***/ (function(module) {
 
-module.exports = {"main":[{"front":{"title":"lightbox","thumbNail":"static/images/projects/lightbox.png","date":"March 2019","tag":["vue","lightbox","javascript"]},"content":{"largeImg":"static/images/projects/lightbox.png","title":"lightbox","topContent":["Using vue js to create a lightbox with vue transitions to create a fade effect one the slider is in action. Making use the vue syntax to loop through an array of objects that holds the lightbox data. Using click events and basic logic to move next and prev throug the slider."],"titleTwo":"code used","code":["vue","sass","javascript","html"],"titleThree":"links","links":[{"link":"https://medium.com/js-dojo/how-to-create-a-vue-js-lightbox-8554a88aae7a","text":"medium blog"}]}},{"front":{"title":"glossary search","thumbNail":"static/images/projects/glossary.png","date":"May 2019","tag":["ES6","Javascript"]},"content":{"largeImg":"static/images/projects/glossary.png","title":"glossary search","topContent":["Using ES6 javaScript to loop through data and provide a search functionality that highlights matching words when typed. Users can click letters to bring up matching words of type the words. Using an mvc patttern to keep the code oragnised and clean. Working with the designers to talk through functionality and discussing any issues that may arise from the inital design."],"titleTwo":"code used","code":["es6","sass","javascript","mvc"],"links":[{"link":"https://www.casino.ca/guides/terminology/","text":"glossary search"}]}},{"front":{"title":"odds of tube delay","thumbNail":"static/images/projects/train.png","date":"April 2019","tag":["ES6","Javascript"]},"content":{"largeImg":"static/images/projects/train.png","title":"odds of tube delay","topContent":["Creating an intertative page that lets users know details on london tube delays. Usig ES6 Javascrip to create an engaging tube map to show the various tube lins on click. Displaying data in a presentable way that is easy to read and a engage with, through the use of drop downs and toggles. This page was used as marketing piece for City AM, and the Londonist, links available below."],"titleTwo":"code used","code":["es6","sass","javascript","mvc"],"links":[{"link":"http://www.cityam.com/274391/which-london-underground-line-suffers-worst-delays","text":"City AM"},{"link":"https://londonist.com/london/transport/tube-delays-by-line","text":"Lononist"}]}}]};
+module.exports = {"main":[{"front":{"title":"River Island","thumbNail":"static/images/sites/riverisland.png","date":"March 2018","tag":["cms","fashion","front end"]},"content":{"largeImg":"static/images/sites/riverisland.png","title":"River Island","topContent":["Working on the front end development and maintenance of www.riverisland.com. Working with the team to develop the website in line with business prioritisation. Creating a pixel perfect experiences across browsers and devices."],"titleTwo":"code used","code":["html","sass","JavaScript","jQuery"],"titleThree":"links","links":[{"link":"//www.riverisland.com","text":"riverisland"}]}},{"front":{"title":"horse racing","thumbNail":"static/images/sites/horseracing.png","date":"June 2018","tag":["racing","web development"]},"content":{"largeImg":"static/images/sites/horseracing.png","title":"horse racing","topContent":["Using html, sass, javaScript, php and vue js to create a unique looking website. Working as part of the front end development team at iTech Media within an agile enviroment. Making use of vue js by adding to certain components that use external data using axios to reach out to api's."],"titleTwo":"code used","code":["html","sass","javascript","vue","axios"],"links":[{"link":"//www.horseracing.co.uk","text":"horseracing"}]}},{"front":{"title":"online betting","thumbNail":"static/images/sites/onlinebetting.png","date":"oct 2018","tag":["sports","vue"]},"content":{"largeImg":"static/images/sites/onlinebetting.png","title":"online betting","topContent":["Using html, sass, javaScript, php and vue js to create a unique looking website. Working as part of the front end development team at iTech Media within an agile enviroment. Making use of vue js by adding to certain components that use external data using axios to reach out to api's."],"titleTwo":"code used","code":["html","sass","javascript","vue","axios"],"links":[{"link":"//www.onlinebetting.co.uk","text":"onlinebetting"}]}}]};
 
 /***/ }),
 
@@ -1850,14 +1850,14 @@ module.exports = {"main":[{"front":{"title":"lightbox","thumbNail":"static/image
 
 /***/ }),
 
-/***/ 4:
-/*!***************************************!*\
-  !*** multi ./pages/single-project.js ***!
-  \***************************************/
+/***/ 3:
+/*!************************************!*\
+  !*** multi ./pages/single-site.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-project.js */"./pages/single-project.js");
+module.exports = __webpack_require__(/*! /Users/harry.beckwith/Desktop/port/pages/single-site.js */"./pages/single-site.js");
 
 
 /***/ }),
@@ -2039,4 +2039,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=single-project.js.map
+//# sourceMappingURL=single-site.js.map
