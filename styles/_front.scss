@@ -6,6 +6,7 @@
     &__card {
         width: 100%;
         margin-bottom: map-get($spacing, 8);
+        cursor: pointer;
 
         @include breakpoint-min(sm) {
             width: 46.5%;
@@ -35,6 +36,7 @@
         &__group {
             display: flex;
             justify-content: center;
+            align-items: baseline;
 
             p {
                 margin-left: 2px;

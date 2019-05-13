@@ -8,27 +8,15 @@ class SingleSite extends React.Component {
     content: '',
   }
 
-
   componentWillMount() {
 
     this.setState({
       content: this.state.projects.main[this.props.url.query.current].content
     })
 
-
-
   }
 
-
   render() {
-
-
-    console.log(this.state.content);
- 
-    // click of card
-    // gets position inside object
-    // loads that object into blogpage component
-
 
     return (
       <Layout>
@@ -70,8 +58,8 @@ class SingleSite extends React.Component {
                 </h2>
 
                 <div className="overview__links">
-                  {this.state.content.code.map((item,index) => (
-                      <a key={index} href={item} className="overview__links__link">{item}</a>
+                  {this.state.content.links.map((item,index) => (
+                                     <a key={index} href={item.link} target="_blank" className="overview__links__link">{item.text}</a>
                     ))}
                 </div>
              
