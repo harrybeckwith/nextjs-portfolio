@@ -1,12 +1,12 @@
 
 import "../styles/gallery.scss";
 import Layout from '../components/MyLayout.js'
-import London from '../static/gallery/london';
 import Crotia from '../static/gallery/croatia';
+import Corsica from '../static/gallery/corsica';
 
 class Gallery extends React.Component {
     state = {
-        gallery: London,
+        gallery: Crotia,
         current: 0,
         active: false
     }
@@ -49,14 +49,15 @@ class Gallery extends React.Component {
 
     changeGallery = (name) => {
 
-        if (name === 'london') {
-            this.setState({
-                gallery: London,
-            })
-        }
         if (name === 'croatia') {
             this.setState({
                 gallery: Crotia,
+            })
+        }
+
+        if (name === 'corsica') {
+            this.setState({
+                gallery: Corsica,
             })
         }
 
@@ -70,10 +71,8 @@ class Gallery extends React.Component {
                 </div>
                 <div className="container">
                     <div className="lightbox__btns">
-                        <div className="btn btn--ldn" onClick={() => this.changeGallery('london')}>London</div>
-                        <div className="btn btn--berlin">Berlin</div>
-                        <div className="btn btn--croatia" onClick={() => this.changeGallery('croatia')}>Croatia</div>
-                        <div className="btn btn--croatia">Corsica</div>
+                        <div className="lightbox__btns__btn btn--croatia" onClick={() => this.changeGallery('croatia')}>Croatia</div>
+                        <div className="lightbox__btns__btn btn--croatia" onClick={() => this.changeGallery('corsica')}>Corsica</div>
                     </div>
                     <div className="gallery">
                         <div className="thumbnails">
@@ -94,11 +93,11 @@ class Gallery extends React.Component {
                     </div>
                 </div>
                 <div className={`${this.state.active ? 'show' : 'hide'}`}>
-                    <img className="lightbox__close" src="/lightbox/close.svg" onClick={this.hideLb} />
-                    <img className="lightbox__arrow lightbox__arrow--prev" src="/lightbox/prev.svg" onClick={this.prev} />
+                    <img className="lightbox__close" src="static/images/lightbox/close.svg" onClick={this.hideLb} />
+                    <img className="lightbox__arrow lightbox__arrow--prev" src="static/images/lightbox/prev.svg" onClick={this.prev} />
                     <img className={`lightbox__img ${this.state.active ? 'show' : 'hide'}`} src={this.state.gallery[this.state.current].lightbox} alt={this.state.current.alt} />
                     <p className="lightbox__caption">{this.state.gallery[this.state.current].caption}</p>
-                    <img className="lightbox__arrow lightbox__arrow--next" src="/lightbox/next.svg" onClick={this.next} />
+                    <img className="lightbox__arrow lightbox__arrow--next" src="static/images/lightbox/next.svg" onClick={this.next} />
                 </div>
 
                 </Layout>

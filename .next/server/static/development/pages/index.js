@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -217,7 +217,7 @@ var Footer = function Footer() {
       lineNumber: 15
     },
     __self: this
-  }, "h")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "harry beckwith")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__links",
     __source: {
       fileName: _jsxFileName,
@@ -273,7 +273,7 @@ function Header(props) {
       lineNumber: 8
     },
     __self: this
-  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Code:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-fixed",
     __source: {
       fileName: _jsxFileName,
@@ -324,7 +324,7 @@ function Header(props) {
       lineNumber: 25
     },
     __self: this
-  }, "title"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "   Code:"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
@@ -1659,26 +1659,65 @@ var Index = function Index() {
       lineNumber: 9
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "home__content",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    class: "home__img",
+    src: "/static/images/gallery/croatia/4.jpg",
+    alt: "",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home__content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, "Hello"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 13
     },
     __self: this
-  }, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""))));
+  }, "Hello, my name is ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), "Harry Beckwith")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "I am a Front-end Developer.  I have 5 years commercial experience providing front-end development, producing high quality responsive websites and exceptional user experience."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "current skills: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Responsive HTML/CSS, JavaScript, Vue Js, React Js, sass, Git, Agile")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -1696,7 +1735,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

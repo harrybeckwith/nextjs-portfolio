@@ -15,11 +15,13 @@
 }
 .lightbox {
 
+   
+
     &__img {
         width: 50%;
         align-self: center;
         position: absolute;
-        z-index: 6;
+        z-index: 9999;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,7 +38,7 @@
         top: 0;
         bottom: 0;
         right: 0;
-        z-index: 5;
+        z-index: 999;
     }
 
     &__arrow {
@@ -79,7 +81,7 @@
     &__close,
     &__arrow,
     &__caption { 
-        z-index: 9;
+        z-index: 999;
     }
 
     &__btns {
@@ -89,6 +91,11 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+
+        &__btn {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 }
 

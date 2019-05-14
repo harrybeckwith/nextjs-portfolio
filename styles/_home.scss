@@ -6,4 +6,8 @@
         display:flex;
         justify-content: space-around;
     }
+
+    &__img {
+        max-width: 500px;
+    }
 }

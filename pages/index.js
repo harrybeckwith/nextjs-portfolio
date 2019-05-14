@@ -7,21 +7,27 @@ const Index = () => {
       <Layout>
         
         <div className="home">
+        <img class="home__img" src="/static/images/gallery/croatia/4.jpg" alt=""/>
           <div className="home__content">
-        
-            <h2>
-              Hello
-            </h2>
-          
-            <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <div>
+                <h2>
+                  Hello, my name is <br></br>
+                  Harry Beckwith
+                </h2>
+                </div>
+                <div>
+                <p>
+                  I am a Front-end Developer.  I have 5 years commercial experience providing front-end development, producing high quality responsive websites and exceptional user experience.
+                </p>
 
-            </div>
+                  <p>current skills: </p>
+                  <p>
+                      Responsive HTML/CSS, JavaScript, Vue Js, React Js, sass, Git, Agile
+                  </p>
 
-        </div>
-
-
+                  </div>
+                </div>
+              </div>
       </Layout>
     );
 

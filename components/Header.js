@@ -6,7 +6,7 @@ export default function Header(props) {
   return (
     <header className={`header ${props.activeMenu ? "active-menu" : ""}`}>
       <h3 className="title__underline title--md title__sm-only header__title">
-        Naomi
+        Code: 
       </h3>
       <div className="container-fixed">
         <div className="container">
@@ -22,7 +22,7 @@ export default function Header(props) {
               alt="menu-icon"
             />
             <h3 className="title__underline title--md title__md-only">
-              <Link href="/"><a>title</a></Link>
+              <Link href="/"><a>   Code:</a></Link>
             </h3>
             <div className="menu__icons">
               <SocialIcons/>

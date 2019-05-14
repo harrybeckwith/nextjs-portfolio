@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -217,7 +217,7 @@ var Footer = function Footer() {
       lineNumber: 15
     },
     __self: this
-  }, "h")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "harry beckwith")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer__links",
     __source: {
       fileName: _jsxFileName,
@@ -273,7 +273,7 @@ function Header(props) {
       lineNumber: 8
     },
     __self: this
-  }, "Naomi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Code:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-fixed",
     __source: {
       fileName: _jsxFileName,
@@ -324,7 +324,7 @@ function Header(props) {
       lineNumber: 25
     },
     __self: this
-  }, "title"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "   Code:"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu__icons",
     __source: {
       fileName: _jsxFileName,
@@ -1650,8 +1650,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/gallery.scss */ "./styles/gallery.scss");
 /* harmony import */ var _styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_gallery_scss__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/gallery/london */ "./static/gallery/london.js");
-/* harmony import */ var _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/gallery/croatia */ "./static/gallery/croatia.js");
+/* harmony import */ var _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/gallery/croatia */ "./static/gallery/croatia.js");
+/* harmony import */ var _static_gallery_corsica__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/gallery/corsica */ "./static/gallery/corsica.js");
 
 
 
@@ -1685,7 +1685,7 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Gallery)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      gallery: _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__["default"],
+      gallery: _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_10__["default"],
       current: 0,
       active: false
     });
@@ -1728,15 +1728,15 @@ function (_React$Component) {
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "changeGallery", function (name) {
-      if (name === 'london') {
+      if (name === 'croatia') {
         _this.setState({
-          gallery: _static_gallery_london__WEBPACK_IMPORTED_MODULE_10__["default"]
+          gallery: _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_10__["default"]
         });
       }
 
-      if (name === 'croatia') {
+      if (name === 'corsica') {
         _this.setState({
-          gallery: _static_gallery_croatia__WEBPACK_IMPORTED_MODULE_11__["default"]
+          gallery: _static_gallery_corsica__WEBPACK_IMPORTED_MODULE_11__["default"]
         });
       }
     });
@@ -1752,7 +1752,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -1760,69 +1760,55 @@ function (_React$Component) {
         onClick: this.hideLb,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 69
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "lightbox__btns",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "btn btn--ldn",
-        onClick: function onClick() {
-          return _this2.changeGallery('london');
-        },
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 73
         },
         __self: this
-      }, "London"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "btn btn--berlin",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "lightbox__btns__btn btn--croatia",
+        onClick: function onClick() {
+          return _this2.changeGallery('croatia');
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 74
         },
         __self: this
-      }, "Berlin"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "btn btn--croatia",
+      }, "Croatia"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "lightbox__btns__btn btn--croatia",
         onClick: function onClick() {
-          return _this2.changeGallery('croatia');
+          return _this2.changeGallery('corsica');
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 75
         },
         __self: this
-      }, "Croatia"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "btn btn--croatia",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
       }, "Corsica")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "gallery",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "thumbnails",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 78
         },
         __self: this
       }, this.state.gallery.map(function (item, index) {
@@ -1837,7 +1823,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 82
+            lineNumber: 81
           },
           __self: this
         });
@@ -1845,25 +1831,25 @@ function (_React$Component) {
         className: "".concat(this.state.active ? 'show' : 'hide'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
         className: "lightbox__close",
-        src: "/lightbox/close.svg",
+        src: "static/images/lightbox/close.svg",
         onClick: this.hideLb,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 96
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
         className: "lightbox__arrow lightbox__arrow--prev",
-        src: "/lightbox/prev.svg",
+        src: "static/images/lightbox/prev.svg",
         onClick: this.prev,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 97
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -1872,23 +1858,23 @@ function (_React$Component) {
         alt: this.state.current.alt,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 98
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         className: "lightbox__caption",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 99
         },
         __self: this
       }, this.state.gallery[this.state.current].caption), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
         className: "lightbox__arrow lightbox__arrow--next",
-        src: "/lightbox/next.svg",
+        src: "static/images/lightbox/next.svg",
         onClick: this.next,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 100
         },
         __self: this
       })));
@@ -1899,6 +1885,65 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Gallery);
+
+/***/ }),
+
+/***/ "./static/gallery/corsica.js":
+/*!***********************************!*\
+  !*** ./static/gallery/corsica.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var gallery = [{
+  thumbnail: 'static/images/gallery/corsica/1.jpg',
+  lightbox: 'static/images/gallery/corsica/1.jpg',
+  alt: "corsica",
+  caption: '1'
+}, {
+  thumbnail: 'static/images/gallery/corsica/2.jpg',
+  lightbox: 'static/images/gallery/corsica/2.jpg',
+  alt: "corsica",
+  caption: '2'
+}, {
+  thumbnail: 'static/images/gallery/corsica/3.jpg',
+  lightbox: 'static/images/gallery/corsica/3.jpg',
+  alt: "corsica",
+  caption: '3'
+}, {
+  thumbnail: 'static/images/gallery/corsica/4.jpg',
+  lightbox: 'static/images/gallery/corsica/4.jpg',
+  alt: "corsica",
+  caption: '4'
+}, {
+  thumbnail: 'static/images/gallery/corsica/5.jpg',
+  lightbox: 'static/images/gallery/corsica/5.jpg',
+  alt: "corsica",
+  caption: '5'
+}, {
+  thumbnail: 'static/images/gallery/corsica/6.jpg',
+  lightbox: 'static/images/gallery/corsica/6.jpg',
+  alt: "corsica",
+  caption: '6'
+}, {
+  thumbnail: 'static/images/gallery/corsica/7.jpg',
+  lightbox: 'static/images/gallery/corsica/7.jpg',
+  alt: "corsica",
+  caption: '7'
+}, {
+  thumbnail: 'static/images/gallery/corsica/8.jpg',
+  lightbox: 'static/images/gallery/corsica/8.jpg',
+  alt: "corsica",
+  caption: '8'
+}, {
+  thumbnail: 'static/images/gallery/corsica/9.jpg',
+  lightbox: 'static/images/gallery/corsica/9.jpg',
+  alt: "corsica",
+  caption: '9'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
 
 /***/ }),
 
@@ -1961,65 +2006,6 @@ var gallery = [{
 
 /***/ }),
 
-/***/ "./static/gallery/london.js":
-/*!**********************************!*\
-  !*** ./static/gallery/london.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var gallery = [{
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '1'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '2'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '1'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '2'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '1'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '2'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '1'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '2'
-}, {
-  thumbnail: 'static/images/blog/example1.jpg',
-  lightbox: 'static/images/blog/example1.jpg',
-  alt: "img",
-  caption: '2'
-}];
-/* harmony default export */ __webpack_exports__["default"] = (gallery);
-
-/***/ }),
-
 /***/ "./styles/base.scss":
 /*!**************************!*\
   !*** ./styles/base.scss ***!
@@ -2042,7 +2028,7 @@ var gallery = [{
 
 /***/ }),
 
-/***/ 3:
+/***/ 9:
 /*!********************************!*\
   !*** multi ./pages/gallery.js ***!
   \********************************/
