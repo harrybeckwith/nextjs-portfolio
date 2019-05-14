@@ -539,15 +539,32 @@ h5 {
   .footer__note a, .footer__links a {
     text-decoration: none; }
 
-.home__content {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-around; }
+@media (min-width: 768px) {
+  .home__content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
+
+.home__content__title {
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    .home__content__title {
+      width: 48%; } }
+
+.home__content, .home__img {
+  width: 900px;
+  max-width: 100%; }
 
 .home__img {
-  max-width: 500px; }
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.home__link {
+  text-decoration: underline;
+  margin-left: 5px; }
 
 .overview__container {
   display: flex;
