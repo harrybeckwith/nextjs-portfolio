@@ -10937,7 +10937,7 @@ var gallery = [{
 
 /***/ }),
 
-/***/ 8:
+/***/ 6:
 /*!***************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fgallery&absolutePagePath=%2FUsers%2Fharry.beckwith%2FDesktop%2Fport%2Fpages%2Fgallery.js ***!
   \***************************************************************************************************************************************/
@@ -10960,5 +10960,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=gallery.js.map
